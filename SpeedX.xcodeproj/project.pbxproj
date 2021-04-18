@@ -1,0 +1,501 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EBC85E51262C5D01003B6808 /* SpeedX.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EBC85E3B262C5D01003B6808 /* SpeedX.xcdatamodeld */; };
+		EBC85E52262C5D01003B6808 /* SpeedX.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EBC85E3B262C5D01003B6808 /* SpeedX.xcdatamodeld */; };
+		EBC85E53262C5D01003B6808 /* SpeedXApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC85E3D262C5D01003B6808 /* SpeedXApp.swift */; };
+		EBC85E54262C5D01003B6808 /* SpeedXApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC85E3D262C5D01003B6808 /* SpeedXApp.swift */; };
+		EBC85E55262C5D01003B6808 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC85E3E262C5D01003B6808 /* ContentView.swift */; };
+		EBC85E56262C5D01003B6808 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC85E3E262C5D01003B6808 /* ContentView.swift */; };
+		EBC85E57262C5D01003B6808 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC85E3F262C5D01003B6808 /* Persistence.swift */; };
+		EBC85E58262C5D01003B6808 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC85E3F262C5D01003B6808 /* Persistence.swift */; };
+		EBC85E59262C5D01003B6808 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBC85E40262C5D01003B6808 /* Assets.xcassets */; };
+		EBC85E5A262C5D01003B6808 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBC85E40262C5D01003B6808 /* Assets.xcassets */; };
+		EBC85E71262C62E1003B6808 /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC85E70262C62E1003B6808 /* Subscription.swift */; };
+		EBC85E76262C6636003B6808 /* SubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC85E75262C6636003B6808 /* SubView.swift */; };
+		EBC85E77262C6636003B6808 /* SubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC85E75262C6636003B6808 /* SubView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EBC85E3C262C5D01003B6808 /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
+		EBC85E3D262C5D01003B6808 /* SpeedXApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedXApp.swift; sourceTree = "<group>"; };
+		EBC85E3E262C5D01003B6808 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EBC85E3F262C5D01003B6808 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		EBC85E40262C5D01003B6808 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EBC85E45262C5D01003B6808 /* SpeedX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeedX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBC85E48262C5D01003B6808 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBC85E4D262C5D01003B6808 /* SpeedX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeedX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBC85E4F262C5D01003B6808 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBC85E50262C5D01003B6808 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		EBC85E65262C5E4C003B6808 /* .gitigonre */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitigonre; path = iOS/.gitigonre; sourceTree = "<group>"; };
+		EBC85E66262C5E6D003B6808 /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
+		EBC85E70262C62E1003B6808 /* Subscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
+		EBC85E75262C6636003B6808 /* SubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EBC85E42262C5D01003B6808 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBC85E4A262C5D01003B6808 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EBC85E35262C5D01003B6808 = {
+			isa = PBXGroup;
+			children = (
+				EBC85E66262C5E6D003B6808 /* readme.md */,
+				EBC85E65262C5E4C003B6808 /* .gitigonre */,
+				EBC85E3A262C5D01003B6808 /* Shared */,
+				EBC85E47262C5D01003B6808 /* iOS */,
+				EBC85E4E262C5D01003B6808 /* macOS */,
+				EBC85E46262C5D01003B6808 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EBC85E3A262C5D01003B6808 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				EBC85E74262C661E003B6808 /* Views */,
+				EBC85E69262C6137003B6808 /* Models */,
+				EBC85E3D262C5D01003B6808 /* SpeedXApp.swift */,
+				EBC85E3E262C5D01003B6808 /* ContentView.swift */,
+				EBC85E3F262C5D01003B6808 /* Persistence.swift */,
+				EBC85E40262C5D01003B6808 /* Assets.xcassets */,
+				EBC85E3B262C5D01003B6808 /* SpeedX.xcdatamodeld */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		EBC85E46262C5D01003B6808 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EBC85E45262C5D01003B6808 /* SpeedX.app */,
+				EBC85E4D262C5D01003B6808 /* SpeedX.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EBC85E47262C5D01003B6808 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EBC85E48262C5D01003B6808 /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		EBC85E4E262C5D01003B6808 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				EBC85E4F262C5D01003B6808 /* Info.plist */,
+				EBC85E50262C5D01003B6808 /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		EBC85E69262C6137003B6808 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EBC85E70262C62E1003B6808 /* Subscription.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EBC85E74262C661E003B6808 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EBC85E75262C6636003B6808 /* SubView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EBC85E44262C5D01003B6808 /* SpeedX (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBC85E5D262C5D01003B6808 /* Build configuration list for PBXNativeTarget "SpeedX (iOS)" */;
+			buildPhases = (
+				EBC85E41262C5D01003B6808 /* Sources */,
+				EBC85E42262C5D01003B6808 /* Frameworks */,
+				EBC85E43262C5D01003B6808 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SpeedX (iOS)";
+			productName = "SpeedX (iOS)";
+			productReference = EBC85E45262C5D01003B6808 /* SpeedX.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EBC85E4C262C5D01003B6808 /* SpeedX (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBC85E60262C5D01003B6808 /* Build configuration list for PBXNativeTarget "SpeedX (macOS)" */;
+			buildPhases = (
+				EBC85E49262C5D01003B6808 /* Sources */,
+				EBC85E4A262C5D01003B6808 /* Frameworks */,
+				EBC85E4B262C5D01003B6808 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SpeedX (macOS)";
+			productName = "SpeedX (macOS)";
+			productReference = EBC85E4D262C5D01003B6808 /* SpeedX.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EBC85E36262C5D01003B6808 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					EBC85E44262C5D01003B6808 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					EBC85E4C262C5D01003B6808 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = EBC85E39262C5D01003B6808 /* Build configuration list for PBXProject "SpeedX" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EBC85E35262C5D01003B6808;
+			productRefGroup = EBC85E46262C5D01003B6808 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EBC85E44262C5D01003B6808 /* SpeedX (iOS) */,
+				EBC85E4C262C5D01003B6808 /* SpeedX (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EBC85E43262C5D01003B6808 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBC85E59262C5D01003B6808 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBC85E4B262C5D01003B6808 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBC85E5A262C5D01003B6808 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EBC85E41262C5D01003B6808 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBC85E53262C5D01003B6808 /* SpeedXApp.swift in Sources */,
+				EBC85E57262C5D01003B6808 /* Persistence.swift in Sources */,
+				EBC85E51262C5D01003B6808 /* SpeedX.xcdatamodeld in Sources */,
+				EBC85E76262C6636003B6808 /* SubView.swift in Sources */,
+				EBC85E55262C5D01003B6808 /* ContentView.swift in Sources */,
+				EBC85E71262C62E1003B6808 /* Subscription.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBC85E49262C5D01003B6808 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBC85E54262C5D01003B6808 /* SpeedXApp.swift in Sources */,
+				EBC85E58262C5D01003B6808 /* Persistence.swift in Sources */,
+				EBC85E52262C5D01003B6808 /* SpeedX.xcdatamodeld in Sources */,
+				EBC85E56262C5D01003B6808 /* ContentView.swift in Sources */,
+				EBC85E77262C6636003B6808 /* SubView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		EBC85E5B262C5D01003B6808 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EBC85E5C262C5D01003B6808 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		EBC85E5E262C5D01003B6808 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZKXZY4PDTJ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ehco.speedx.SpeedX;
+				PRODUCT_NAME = SpeedX;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EBC85E5F262C5D01003B6808 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZKXZY4PDTJ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ehco.speedx.SpeedX;
+				PRODUCT_NAME = SpeedX;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EBC85E61262C5D01003B6808 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = ZKXZY4PDTJ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ehco.speedx.SpeedX;
+				PRODUCT_NAME = SpeedX;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		EBC85E62262C5D01003B6808 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = ZKXZY4PDTJ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ehco.speedx.SpeedX;
+				PRODUCT_NAME = SpeedX;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EBC85E39262C5D01003B6808 /* Build configuration list for PBXProject "SpeedX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBC85E5B262C5D01003B6808 /* Debug */,
+				EBC85E5C262C5D01003B6808 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBC85E5D262C5D01003B6808 /* Build configuration list for PBXNativeTarget "SpeedX (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBC85E5E262C5D01003B6808 /* Debug */,
+				EBC85E5F262C5D01003B6808 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBC85E60262C5D01003B6808 /* Build configuration list for PBXNativeTarget "SpeedX (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBC85E61262C5D01003B6808 /* Debug */,
+				EBC85E62262C5D01003B6808 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EBC85E3B262C5D01003B6808 /* SpeedX.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EBC85E3C262C5D01003B6808 /* Shared.xcdatamodel */,
+			);
+			currentVersion = EBC85E3C262C5D01003B6808 /* Shared.xcdatamodel */;
+			path = SpeedX.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EBC85E36262C5D01003B6808 /* Project object */;
+}
