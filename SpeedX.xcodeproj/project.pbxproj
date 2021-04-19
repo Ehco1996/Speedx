@@ -20,6 +20,8 @@
 		EBC85E71262C62E1003B6808 /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC85E70262C62E1003B6808 /* Subscription.swift */; };
 		EBC85E76262C6636003B6808 /* SubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC85E75262C6636003B6808 /* SubView.swift */; };
 		EBC85E77262C6636003B6808 /* SubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC85E75262C6636003B6808 /* SubView.swift */; };
+		EBC85E92262D0303003B6808 /* SubDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC85E91262D0303003B6808 /* SubDetailView.swift */; };
+		EBC85E93262D0303003B6808 /* SubDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC85E91262D0303003B6808 /* SubDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,7 @@
 		EBC85E66262C5E6D003B6808 /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
 		EBC85E70262C62E1003B6808 /* Subscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
 		EBC85E75262C6636003B6808 /* SubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubView.swift; sourceTree = "<group>"; };
+		EBC85E91262D0303003B6808 /* SubDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				EBC85E75262C6636003B6808 /* SubView.swift */,
+				EBC85E91262D0303003B6808 /* SubDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -223,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBC85E53262C5D01003B6808 /* SpeedXApp.swift in Sources */,
+				EBC85E92262D0303003B6808 /* SubDetailView.swift in Sources */,
 				EBC85E57262C5D01003B6808 /* Persistence.swift in Sources */,
 				EBC85E51262C5D01003B6808 /* SpeedX.xcdatamodeld in Sources */,
 				EBC85E76262C6636003B6808 /* SubView.swift in Sources */,
@@ -235,6 +240,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBC85E93262D0303003B6808 /* SubDetailView.swift in Sources */,
 				EBC85E54262C5D01003B6808 /* SpeedXApp.swift in Sources */,
 				EBC85E58262C5D01003B6808 /* Persistence.swift in Sources */,
 				EBC85E52262C5D01003B6808 /* SpeedX.xcdatamodeld in Sources */,

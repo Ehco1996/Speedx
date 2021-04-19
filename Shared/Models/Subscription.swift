@@ -9,7 +9,7 @@ import Foundation
 
 struct Subscription: Identifiable, Codable {
     let id: Int
-    var name: String
+    var remark: String
     var url: String
     var createdAt: Date
     var updatedAt: Date
