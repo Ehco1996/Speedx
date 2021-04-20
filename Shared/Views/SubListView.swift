@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SubView: View {
+struct SubListView: View {
 
     var title: some View {
         HStack {
@@ -15,7 +15,6 @@ struct SubView: View {
             Text("SpeedX").font(.headline)
         }
     }
-
 
     var qrcode: some View {
         Button(action: {
@@ -25,46 +24,47 @@ struct SubView: View {
         }
     }
 
-
-
     @State private var showDetail = false
     var add: some View {
         VStack {
             Button(action: {
-                print("add button")
-                showDetail = true
+                print("click add button")
+                self.showDetail.toggle()
             }, label: {
                 Image(systemName: "plus").imageScale(.large)
-            }).sheet(isPresented: $showDetail, content: {
-                SubDetailView(isPresented: $showDetail)
             })
         }
     }
 
+    @Environment(\.managedObjectContext) var context
+    @FetchRequest(fetchRequest: Subscription.listAll()) var subList: FetchedResults<Subscription>
+    init() {
+        self._subList = FetchRequest(fetchRequest: Subscription.listAll())
+    }
 
     var body: some View {
         NavigationView {
             List {
-//                NavigationLink(destination: SubDetailView()) {
-//                    Text("url1")
-//                }
-                Text("url2")
-                Text("url3")
-
-            }.padding()
-                .navigationTitle("订阅管理")
+                ForEach(subList, id: \.uid) { sub in
+                    Text(sub.uid.uuidString)
+                }
+            }.navigationTitle("订阅管理")
                 .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) { qrcode }
                 ToolbarItem(placement: .principal) { title }
                 ToolbarItem(placement: .navigationBarTrailing) { add }
-            }
+            }.sheet(isPresented: $showDetail, content: {
+                SubDetailView(isPresented: $showDetail, navigationBarTitle: "添加订阅").environment(\.managedObjectContext, self.context)
+            })
         }
     }
 }
 
 
 struct SubView_Previews: PreviewProvider {
+    @Environment(\.managedObjectContext) var context
+    @FetchRequest var subList: FetchedResults<Subscription>
     static var previews: some View {
-        SubView()
+        SubListView()
     }
 }

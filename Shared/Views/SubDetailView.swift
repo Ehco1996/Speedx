@@ -10,12 +10,15 @@ import SwiftUI
 struct SubDetailView: View {
     @State var url: String = ""
     @State var remark: String = ""
+    @State private var showSaveAlert = false
+    @Environment(\.managedObjectContext) var context
 
-
+    private var navigationBarTitle: String
     // 控制是否展示的
     @Binding var isPresented: Bool
-    init(isPresented: Binding<Bool>) {
-        _isPresented = isPresented
+    init(isPresented: Binding<Bool>, navigationBarTitle: String) {
+        self._isPresented = isPresented
+        self.navigationBarTitle = navigationBarTitle
     }
 
     var body: some View {
@@ -26,7 +29,7 @@ struct SubDetailView: View {
                     TextField("备注", text: $remark)
                 }
             }
-                .navigationBarTitle("添加/编辑订阅")
+                .navigationBarTitle(self.navigationBarTitle)
                 .navigationBarItems(leading: cancel, trailing: done)
         }
     }
@@ -38,10 +41,21 @@ struct SubDetailView: View {
     }
 
     var done: some View {
-        Button(action: { self.isPresented = false }) {
-            Image(systemName: "checkmark").imageScale(.large) }
+        Button(action: {
+            Subscription.create(url: url, remark: remark, context: context)
+            self.showSaveAlert.toggle()
+        },
+               label: {
+                   Image(systemName: "checkmark").imageScale(.large)
+               }
+        ).alert(isPresented: $showSaveAlert, content: {
+            Alert(title: Text("保存成功"), dismissButton: .default(Text("Ok")) {
+                self.isPresented.toggle()
+            })
+        })
     }
 }
+
 
 
 //struct SubDetailView_Previews: PreviewProvider {

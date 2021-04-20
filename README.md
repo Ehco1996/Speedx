@@ -1,2 +1,1 @@
-# Speedx
-auto speed test
+# SpeedX > auto speed test

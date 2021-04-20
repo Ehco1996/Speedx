@@ -1,2 +1,0 @@
-# SpeedX
-> auto speed test 
