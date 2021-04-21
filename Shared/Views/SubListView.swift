@@ -7,10 +7,17 @@
 
 import SwiftUI
 
+extension EditMode {
+    mutating func toggle() {
+        self = self == .active ? .inactive : .active
+    }
+}
+
 struct SubListView: View {
 
     @State private var showDetail = false
-    @State private var editMode = EditMode.inactive
+    @State private var editMode: EditMode = .inactive
+    @State private var selection: String?
 
     @Environment(\.managedObjectContext) var context
     @FetchRequest(fetchRequest: Subscription.listAll()) var subList: FetchedResults<Subscription>
@@ -52,35 +59,41 @@ struct SubListView: View {
 
 
     private var editButton: some View {
-        Button(action: { }) {
-            Text("...")
+        HStack {
+            Text("订阅列表")
+            Spacer()
+            Button(action: { self.editMode.toggle() }) {
+                Image(systemName: "square.and.pencil").imageScale(.large)
+            }
         }
     }
 
     var body: some View {
         NavigationView {
             List {
-//                editButton()
-
-                ForEach(subList, id: \.uid) { sub in
-                    Text(sub.remark!)
-                }.onDelete { indexSet in
-                    indexSet.map { self.subList[$0] }.forEach { sub in
-                        sub.delete(context: context)
+                Section(header: editButton) {
+                    ForEach(subList, id: \.uid) { sub in
+                        Text(sub.remark!)
+                    }.onDelete { indexSet in
+                        indexSet.map { self.subList[$0] }.forEach { sub in
+                            sub.delete(context: context)
+                        }
                     }
                 }
-            }.navigationTitle("订阅管理")
+            }
+                .listStyle(GroupedListStyle())
+                .navigationTitle("订阅管理")
                 .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) { ScanQrcodeOrDelete }
                 ToolbarItem(placement: .principal) { title }
                 ToolbarItem(placement: .navigationBarTrailing) { addOrEdit }
-            }.sheet(isPresented: $showDetail, content: {
+            }.environment(\.editMode, self.$editMode)
+                .sheet(isPresented: $showDetail) {
                 SubDetailView(isPresented: $showDetail, navigationBarTitle: "添加订阅").environment(\.managedObjectContext, self.context)
-            })
-                .environment(\.editMode, self.$editMode)
+            }
         }
-
     }
+
 }
 
 
