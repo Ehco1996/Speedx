@@ -34,17 +34,28 @@ extension Subscription {
     }
 
 
-    static func create(url: String, remark: String?, context: NSManagedObjectContext) -> Subscription? {
-        let sub = Subscription(context: context)
-        sub.remark = remark
-        sub.url = url
-        do {
-            try context.save()
-            return sub
-        } catch {
-            print("save failed")
-            print(error)
+    static func create(context: NSManagedObjectContext, url: String, remark: String?) -> Subscription? {
+        if url != "" {
+            let sub = Subscription(context: context)
+            sub.url = url
+            if remark == "" {
+                sub.remark = url
+            } else {
+                sub.remark = remark
+            }
+            do {
+                try context.save()
+                return sub
+            } catch {
+                print("save failed")
+                print(error)
+            }
         }
         return nil
+    }
+
+    func delete(context: NSManagedObjectContext) -> Void {
+        context.delete(self)
+        try? context.save()
     }
 }

@@ -8,10 +8,14 @@
 import SwiftUI
 
 struct SubDetailView: View {
+    @Environment(\.managedObjectContext) var context
+
     @State var url: String = ""
     @State var remark: String = ""
+
+    @State private var alertTitle = "保存成功"
     @State private var showSaveAlert = false
-    @Environment(\.managedObjectContext) var context
+
 
     private var navigationBarTitle: String
     // 控制是否展示的
@@ -34,7 +38,6 @@ struct SubDetailView: View {
         }
     }
 
-
     var cancel: some View {
         Button(action: { self.isPresented = false }) {
             Image(systemName: "chevron.backward").imageScale(.large) }
@@ -42,14 +45,15 @@ struct SubDetailView: View {
 
     var done: some View {
         Button(action: {
-            Subscription.create(url: url, remark: remark, context: context)
-            self.showSaveAlert.toggle()
-        },
+            if (Subscription.create(context: context, url: url, remark: remark) == nil) {
+                self.alertTitle = "保存失败url:\(url)"
+            }
+            self.showSaveAlert.toggle() },
                label: {
                    Image(systemName: "checkmark").imageScale(.large)
                }
         ).alert(isPresented: $showSaveAlert, content: {
-            Alert(title: Text("保存成功"), dismissButton: .default(Text("Ok")) {
+            Alert(title: Text(self.alertTitle), dismissButton: .default(Text("Ok")) {
                 self.isPresented.toggle()
             })
         })
