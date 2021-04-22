@@ -32,14 +32,13 @@ struct SubListView: View {
         }
     }
 
-    var ScanQrcodeOrDelete: some View {
+    var scanQrcode: some View {
         Button(action: {
             print("Message button was tapped")
         }) {
             Image(systemName: "viewfinder").imageScale(.large)
         }
     }
-
 
     private var addOrEdit: some View {
         switch self.editMode {
@@ -56,42 +55,44 @@ struct SubListView: View {
         }
     }
 
-
-
     private var editButton: some View {
-        HStack {
+        HStack(alignment: .bottom) {
             Text("订阅列表")
             Spacer()
             Button(action: { self.editMode.toggle() }) {
-                Image(systemName: "square.and.pencil").imageScale(.large)
+                Text("...").font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/).foregroundColor(.gray).bold()
             }
         }
     }
 
     var body: some View {
-        NavigationView {
-            List {
-                Section(header: editButton) {
-                    ForEach(subList, id: \.uid) { sub in
-                        Text(sub.remark!)
-                    }.onDelete { indexSet in
-                        indexSet.map { self.subList[$0] }.forEach { sub in
-                            sub.delete(context: context)
+        VStack(spacing: 0) {
+            NavigationView {
+                List {
+                    Section(header: editButton) {
+                        ForEach(subList, id: \.uid) { sub in
+                            SubRowView(sub: sub)
+                        }.onDelete { indexSet in
+                            indexSet.map { self.subList[$0] }.forEach { sub in
+                                sub.delete(context: context)
+                            }
                         }
                     }
                 }
+                    .listStyle(GroupedListStyle())
+                    .navigationTitle("订阅管理")
+                    .toolbar {
+                    ToolbarItem(placement: .navigationBarLeading) { scanQrcode }
+                    ToolbarItem(placement: .principal) { title }
+                    ToolbarItem(placement: .navigationBarTrailing) { addOrEdit }
+                }.environment(\.editMode, self.$editMode)
+                    .sheet(isPresented: $showDetail) {
+                    SubDetailView(isPresented: $showDetail, navigationBarTitle: "添加订阅").environment(\.managedObjectContext, self.context)
+                }
             }
-                .listStyle(GroupedListStyle())
-                .navigationTitle("订阅管理")
-                .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) { ScanQrcodeOrDelete }
-                ToolbarItem(placement: .principal) { title }
-                ToolbarItem(placement: .navigationBarTrailing) { addOrEdit }
-            }.environment(\.editMode, self.$editMode)
-                .sheet(isPresented: $showDetail) {
-                SubDetailView(isPresented: $showDetail, navigationBarTitle: "添加订阅").environment(\.managedObjectContext, self.context)
-            }
+                .navigationViewStyle(StackNavigationViewStyle())
         }
+
     }
 
 }
