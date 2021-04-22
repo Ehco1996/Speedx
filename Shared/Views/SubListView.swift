@@ -65,17 +65,34 @@ struct SubListView: View {
         }
     }
 
+    @ViewBuilder
+    func sectiondSubRow(sub: Subscription) -> some View {
+        // NOTE: 只有第一个格子有title和editbutton,最后一个格子有footer
+        if sub == self.subList.first {
+            Section(header: editButton) {
+                SubRowView(sub: sub)
+            }
+        } else if sub == self.subList.last {
+            Section(footer: Text("只会测试当前展开订阅组里的节点")) {
+                SubRowView(sub: sub)
+            }
+        } else {
+            Section() {
+                SubRowView(sub: sub)
+            }
+        }
+    }
+
+
     var body: some View {
         VStack(spacing: 0) {
             NavigationView {
                 List {
-                    Section(header: editButton) {
-                        ForEach(subList, id: \.uid) { sub in
-                            SubRowView(sub: sub)
-                        }.onDelete { indexSet in
-                            indexSet.map { self.subList[$0] }.forEach { sub in
-                                sub.delete(context: context)
-                            }
+                    ForEach(subList, id: \.uid) { sub in
+                        sectiondSubRow(sub: sub)
+                    }.onDelete { indexSet in
+                        indexSet.map { self.subList[$0] }.forEach { sub in
+                            sub.delete(context: context)
                         }
                     }
                 }
@@ -92,9 +109,7 @@ struct SubListView: View {
             }
                 .navigationViewStyle(StackNavigationViewStyle())
         }
-
     }
-
 }
 
 
