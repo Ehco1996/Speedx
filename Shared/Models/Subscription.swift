@@ -12,19 +12,26 @@ import Combine
 //NOTE: Subscription is a model from Core Data
 extension Subscription {
 
-    var uid: UUID {
+    public var uid: UUID {
         get { uid_ ?? UUID() }
         set { uid_ = newValue }
     }
 
-    var remark: String? {
+    public var remark: String? {
         get { remark_ ?? "" }
         set { remark_ = newValue }
     }
 
-    var url: String {
+    public var url: String {
         get { url_ ?? "" }
         set { url_ = newValue }
+    }
+
+
+    public var nodesArray: [ProxyNode] {
+        // NOTE coredata 生成的东西是oc的类型，swiftui不认，所以需要我们手动转一下
+        let set = nodes as? Set<ProxyNode> ?? []
+        return set.sorted { $0.id_ < $1.id_ }
     }
 
     static func listAll() -> NSFetchRequest<Subscription> {

@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB5CC6C6263424630089B931 /* ProxyNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5CC6C5263424630089B931 /* ProxyNode.swift */; };
+		EB5CC6C7263424630089B931 /* ProxyNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5CC6C5263424630089B931 /* ProxyNode.swift */; };
+		EB5CC6E3263428520089B931 /* ProxyNode+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5CC6DF263428520089B931 /* ProxyNode+CoreDataClass.swift */; };
+		EB5CC6E4263428520089B931 /* ProxyNode+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5CC6DF263428520089B931 /* ProxyNode+CoreDataClass.swift */; };
+		EB5CC6E5263428520089B931 /* ProxyNode+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5CC6E0263428520089B931 /* ProxyNode+CoreDataProperties.swift */; };
+		EB5CC6E6263428520089B931 /* ProxyNode+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5CC6E0263428520089B931 /* ProxyNode+CoreDataProperties.swift */; };
+		EB5CC6E7263428520089B931 /* Subscription+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5CC6E1263428520089B931 /* Subscription+CoreDataClass.swift */; };
+		EB5CC6E8263428520089B931 /* Subscription+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5CC6E1263428520089B931 /* Subscription+CoreDataClass.swift */; };
+		EB5CC6E9263428520089B931 /* Subscription+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5CC6E2263428520089B931 /* Subscription+CoreDataProperties.swift */; };
+		EB5CC6EA263428520089B931 /* Subscription+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5CC6E2263428520089B931 /* Subscription+CoreDataProperties.swift */; };
 		EBB17481262DC2A400D36A6D /* SubManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB17480262DC2A400D36A6D /* SubManager.swift */; };
 		EBB17482262DC2A400D36A6D /* SubManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB17480262DC2A400D36A6D /* SubManager.swift */; };
 		EBC85E51262C5D01003B6808 /* SpeedX.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EBC85E3B262C5D01003B6808 /* SpeedX.xcdatamodeld */; };
@@ -29,6 +39,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EB5CC6C5263424630089B931 /* ProxyNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyNode.swift; sourceTree = "<group>"; };
+		EB5CC6DF263428520089B931 /* ProxyNode+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProxyNode+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		EB5CC6E0263428520089B931 /* ProxyNode+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProxyNode+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		EB5CC6E1263428520089B931 /* Subscription+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Subscription+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		EB5CC6E2263428520089B931 /* Subscription+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Subscription+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		EBB17480262DC2A400D36A6D /* SubManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubManager.swift; sourceTree = "<group>"; };
 		EBC85E3C262C5D01003B6808 /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		EBC85E3D262C5D01003B6808 /* SpeedXApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedXApp.swift; sourceTree = "<group>"; };
@@ -66,6 +81,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EB5CC6DE2634283B0089B931 /* Gen */ = {
+			isa = PBXGroup;
+			children = (
+				EB5CC6DF263428520089B931 /* ProxyNode+CoreDataClass.swift */,
+				EB5CC6E0263428520089B931 /* ProxyNode+CoreDataProperties.swift */,
+				EB5CC6E1263428520089B931 /* Subscription+CoreDataClass.swift */,
+				EB5CC6E2263428520089B931 /* Subscription+CoreDataProperties.swift */,
+			);
+			path = Gen;
+			sourceTree = "<group>";
+		};
 		EBB1747F262DC28100D36A6D /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,7 +156,9 @@
 		EBC85E69262C6137003B6808 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EB5CC6DE2634283B0089B931 /* Gen */,
 				EBC85E70262C62E1003B6808 /* Subscription.swift */,
+				EB5CC6C5263424630089B931 /* ProxyNode.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -245,9 +273,14 @@
 				EBB17481262DC2A400D36A6D /* SubManager.swift in Sources */,
 				EBC85E53262C5D01003B6808 /* SpeedXApp.swift in Sources */,
 				EBC85E92262D0303003B6808 /* SubDetailView.swift in Sources */,
+				EB5CC6E3263428520089B931 /* ProxyNode+CoreDataClass.swift in Sources */,
+				EB5CC6C6263424630089B931 /* ProxyNode.swift in Sources */,
 				EBC85E57262C5D01003B6808 /* Persistence.swift in Sources */,
+				EB5CC6E9263428520089B931 /* Subscription+CoreDataProperties.swift in Sources */,
 				EBC85E51262C5D01003B6808 /* SpeedX.xcdatamodeld in Sources */,
 				EBC85E76262C6636003B6808 /* SubListView.swift in Sources */,
+				EB5CC6E5263428520089B931 /* ProxyNode+CoreDataProperties.swift in Sources */,
+				EB5CC6E7263428520089B931 /* Subscription+CoreDataClass.swift in Sources */,
 				EBC85E55262C5D01003B6808 /* ContentView.swift in Sources */,
 				EBEBF96F2630F35500E31F42 /* SubRowView.swift in Sources */,
 				EBC85E71262C62E1003B6808 /* Subscription.swift in Sources */,
@@ -258,13 +291,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB5CC6E8263428520089B931 /* Subscription+CoreDataClass.swift in Sources */,
+				EB5CC6E4263428520089B931 /* ProxyNode+CoreDataClass.swift in Sources */,
 				EBEBF9702630F35500E31F42 /* SubRowView.swift in Sources */,
 				EBC85E93262D0303003B6808 /* SubDetailView.swift in Sources */,
 				EBC85E54262C5D01003B6808 /* SpeedXApp.swift in Sources */,
 				EBC85E58262C5D01003B6808 /* Persistence.swift in Sources */,
+				EB5CC6EA263428520089B931 /* Subscription+CoreDataProperties.swift in Sources */,
+				EB5CC6C7263424630089B931 /* ProxyNode.swift in Sources */,
 				EBB17482262DC2A400D36A6D /* SubManager.swift in Sources */,
 				EBC85E52262C5D01003B6808 /* SpeedX.xcdatamodeld in Sources */,
 				EBC85E56262C5D01003B6808 /* ContentView.swift in Sources */,
+				EB5CC6E6263428520089B931 /* ProxyNode+CoreDataProperties.swift in Sources */,
 				EBC85E77262C6636003B6808 /* SubListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
