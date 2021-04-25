@@ -22,7 +22,7 @@
         </uniquenessConstraints>
     </entity>
     <elements>
-        <element name="ProxyNode" positionX="-24.8359375" positionY="-43.109375" width="128" height="28"/>
+        <element name="ProxyNode" positionX="-24.8359375" positionY="-43.109375" width="128" height="74"/>
         <element name="Subscription" positionX="-439.671875" positionY="-46.58203125" width="118.4765625" height="28"/>
     </elements>
 </model>

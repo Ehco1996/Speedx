@@ -12,8 +12,8 @@ import Combine
 extension ProxyNode {
 
     public var id: Int64 {
-        get { id_ }
-        set { id_ = newValue }
+        get { Int64(id_) }
+        set { id_ = Int64(newValue) }
     }
 
     public var name: String {

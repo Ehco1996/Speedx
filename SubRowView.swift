@@ -9,38 +9,51 @@ import SwiftUI
 
 struct SubRowView: View {
     let sub: Subscription
+    @State private var showNodeList = false
 
     var body: some View {
 
         VStack {
             HStack {
                 Button(action: {
-                    print("left button clicked")
-                    // TODO 展开节点
+                    print("left button clicked", sub.nodesArray.count)
+                    withAnimation {
+                        self.showNodeList.toggle()
+                    }
                 }, label: {
                     Image(systemName: "server.rack").imageScale(.large)
                 })
+                    .border(Color.red)
 
                 VStack(alignment: .leading) {
                     Text(sub.remark!).font(.title3)
                     Text(sub.url).font(.footnote).foregroundColor(.gray)
                 }
+                    .border(Color.red)
+
                 Spacer()
+
                 Button(action: {
                     print("right button clicked")
                     // TODO 进入详情页
                 }, label: {
                     Image(systemName: "pencil").imageScale(.large)
                 })
+                    .border(Color.red)
             }
-
-            List {
+            if self.showNodeList {
                 ForEach(sub.nodesArray, id: \.id) { node in
-                    Text(node.name)
-                }
-            }
 
-        }
+                    HStack {
+                        Text(String(node.id))
+                        Text(node.name)
+                        Rectangle().fill(Color.blue)
+                    }
+
+
+                }.transition(.opacity)
+            }
+        }.buttonStyle(BorderlessButtonStyle())
     }
 
 }
