@@ -19,6 +19,8 @@
 		EB5CC6EA263428520089B931 /* Subscription+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5CC6E2263428520089B931 /* Subscription+CoreDataProperties.swift */; };
 		EBB17481262DC2A400D36A6D /* SubManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB17480262DC2A400D36A6D /* SubManager.swift */; };
 		EBB17482262DC2A400D36A6D /* SubManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB17480262DC2A400D36A6D /* SubManager.swift */; };
+		EBB892CC2636FE82008ACA37 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = EBB892CB2636FE82008ACA37 /* Makefile */; };
+		EBB892CD2636FE82008ACA37 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = EBB892CB2636FE82008ACA37 /* Makefile */; };
 		EBC85E51262C5D01003B6808 /* SpeedX.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EBC85E3B262C5D01003B6808 /* SpeedX.xcdatamodeld */; };
 		EBC85E52262C5D01003B6808 /* SpeedX.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EBC85E3B262C5D01003B6808 /* SpeedX.xcdatamodeld */; };
 		EBC85E53262C5D01003B6808 /* SpeedXApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC85E3D262C5D01003B6808 /* SpeedXApp.swift */; };
@@ -45,6 +47,7 @@
 		EB5CC6E1263428520089B931 /* Subscription+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Subscription+CoreDataClass.swift"; sourceTree = "<group>"; };
 		EB5CC6E2263428520089B931 /* Subscription+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Subscription+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		EBB17480262DC2A400D36A6D /* SubManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubManager.swift; sourceTree = "<group>"; };
+		EBB892CB2636FE82008ACA37 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		EBC85E3C262C5D01003B6808 /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		EBC85E3D262C5D01003B6808 /* SpeedXApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedXApp.swift; sourceTree = "<group>"; };
 		EBC85E3E262C5D01003B6808 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -103,11 +106,12 @@
 		EBC85E35262C5D01003B6808 = {
 			isa = PBXGroup;
 			children = (
-				EBC85E3A262C5D01003B6808 /* Shared */,
 				EBC85E46262C5D01003B6808 /* Products */,
+				EBC85E3A262C5D01003B6808 /* Shared */,
 				EBC85E47262C5D01003B6808 /* iOS */,
 				EBC85E4E262C5D01003B6808 /* macOS */,
 				EBC85E65262C5E4C003B6808 /* .gitigonre */,
+				EBB892CB2636FE82008ACA37 /* Makefile */,
 				EBC85E66262C5E6D003B6808 /* readme.md */,
 			);
 			sourceTree = "<group>";
@@ -270,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBB892CC2636FE82008ACA37 /* Makefile in Sources */,
 				EBB17481262DC2A400D36A6D /* SubManager.swift in Sources */,
 				EBC85E53262C5D01003B6808 /* SpeedXApp.swift in Sources */,
 				EBC85E92262D0303003B6808 /* SubDetailView.swift in Sources */,
@@ -303,6 +308,7 @@
 				EBC85E52262C5D01003B6808 /* SpeedX.xcdatamodeld in Sources */,
 				EBC85E56262C5D01003B6808 /* ContentView.swift in Sources */,
 				EB5CC6E6263428520089B931 /* ProxyNode+CoreDataProperties.swift in Sources */,
+				EBB892CD2636FE82008ACA37 /* Makefile in Sources */,
 				EBC85E77262C6636003B6808 /* SubListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

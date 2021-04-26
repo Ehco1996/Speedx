@@ -20,7 +20,4 @@ extension ProxyNode {
         get { name_! }
         set { name_ = newValue }
     }
-
-
 }
-
