@@ -16,13 +16,10 @@ struct SubDetailView: View {
 	@State private var alertTitle = "保存成功"
 	@State private var showSaveAlert = false
 
-
-	private var navigationBarTitle: String
 	// 控制是否展示的
 	@Binding var isPresented: Bool
-	init(isPresented: Binding<Bool>, navigationBarTitle: String) {
+	init(isPresented: Binding<Bool>) {
 		self._isPresented = isPresented
-		self.navigationBarTitle = navigationBarTitle
 	}
 
 	var body: some View {
@@ -33,7 +30,7 @@ struct SubDetailView: View {
 					TextField("备注", text: $remark)
 				}
 			}
-				.navigationBarTitle(self.navigationBarTitle)
+				.navigationBarTitle("添加订阅")
 				.navigationBarItems(leading: cancel, trailing: done)
 		}
 	}

@@ -4,25 +4,15 @@
         <attribute name="id_" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="name_" optional="YES" attributeType="String"/>
         <relationship name="sub" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Subscription" inverseName="nodes" inverseEntity="Subscription"/>
-        <uniquenessConstraints>
-            <uniquenessConstraint>
-                <constraint value="id_"/>
-            </uniquenessConstraint>
-        </uniquenessConstraints>
     </entity>
     <entity name="Subscription" representedClassName="Subscription" syncable="YES">
         <attribute name="remark_" optional="YES" attributeType="String"/>
         <attribute name="uid_" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="url_" optional="YES" attributeType="String"/>
         <relationship name="nodes" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="ProxyNode" inverseName="sub" inverseEntity="ProxyNode"/>
-        <uniquenessConstraints>
-            <uniquenessConstraint>
-                <constraint value="url_"/>
-            </uniquenessConstraint>
-        </uniquenessConstraints>
     </entity>
     <elements>
-        <element name="ProxyNode" positionX="-24.8359375" positionY="-43.109375" width="128" height="74"/>
-        <element name="Subscription" positionX="-439.671875" positionY="-46.58203125" width="118.4765625" height="28"/>
+        <element name="ProxyNode" positionX="-24.8359375" positionY="-43.109375" width="128" height="14"/>
+        <element name="Subscription" positionX="-439.671875" positionY="-46.58203125" width="118.4765625" height="14"/>
     </elements>
 </model>
