@@ -1,3 +1,3 @@
 sync:
-	echo "sync xcode file"
-	@synx SpeedX.xcodeproj
+	echo "sync xcode file..."
+	@synx --no-sort-by-name -q SpeedX.xcodeproj
