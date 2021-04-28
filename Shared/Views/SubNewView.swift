@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct NewSubView: View {
+struct SubNewView: View {
     @Environment(\.managedObjectContext) var context
 
     @State var url: String = ""
@@ -58,35 +58,10 @@ struct NewSubView: View {
 }
 
 
-struct SubEditView: View {
-    let sub: Subscription
-    @State var url: String = ""
-    @State var remark: String = ""
-
-    init(sub: Subscription) {
-        self.sub = sub
-        self._url = State(initialValue: sub.url)
-        self._remark = State(initialValue: sub.remark!)
-    }
-
-    var body: some View {
-        NavigationView {
-            Form {
-                Section(header: Text("订阅配置")) {
-                    TextField("订阅地址", text: $url)
-                    TextField("备注", text: $remark)
-                }
-            }
-                .navigationBarTitle("编辑订阅")
-        }
-    }
-}
-
-
 
 struct SubDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        NewSubView(isPresented: Binding.constant(true))
+        SubNewView(isPresented: Binding.constant(true))
     }
 }
 

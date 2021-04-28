@@ -35,19 +35,15 @@ struct SubRowView: View {
                 Spacer()
 
 
-                ZStack {
-                    Button(action: {
-                        print("right button clicked")
-                        self.isLinkToEditActive.toggle()
-                        // TODO 进入详情页
-                    }, label: {
-                            Image(systemName: "pencil").imageScale(.large)
-                        })
-                        .border(Color.red)
-                    NavigationLink(destination: SubEditView(sub: sub), isActive: $isLinkToEditActive) { }.frame(width: 0).opacity(0)
-                }
-            }
+                // 点击进入详情界面的按钮
+                Button(
+                    action: { self.isLinkToEditActive.toggle() },
+                    label: { Image(systemName: "pencil").imageScale(.large) })
+                // NOTE: 把NavigationLink的area隐藏，只通过按钮进入详情界面
+                NavigationLink(destination: SubEditView(sub: sub), isActive: $isLinkToEditActive) { EmptyView() }
+                    .frame(width: 0, height: 0).hidden().disabled(true)
 
+            }
             if self.showNodeList {
                 ForEach(sub.nodesArray, id: \.id) { node in
 
@@ -58,9 +54,11 @@ struct SubRowView: View {
                     }
 
 
-                }.transition(.opacity)
+                }
             }
-        }.buttonStyle(BorderlessButtonStyle())
+        }
+            .buttonStyle(BorderlessButtonStyle())
+            .border(Color.black)
     }
 
 }

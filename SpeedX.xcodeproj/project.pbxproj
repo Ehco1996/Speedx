@@ -17,6 +17,8 @@
 		EB5CC6E8263428520089B931 /* Subscription+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5CC6E1263428520089B931 /* Subscription+CoreDataClass.swift */; };
 		EB5CC6E9263428520089B931 /* Subscription+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5CC6E2263428520089B931 /* Subscription+CoreDataProperties.swift */; };
 		EB5CC6EA263428520089B931 /* Subscription+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5CC6E2263428520089B931 /* Subscription+CoreDataProperties.swift */; };
+		EB6B4FEE2638D346006E5D31 /* SubEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6B4FED2638D346006E5D31 /* SubEditView.swift */; };
+		EB6B4FEF2638D346006E5D31 /* SubEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6B4FED2638D346006E5D31 /* SubEditView.swift */; };
 		EBB17481262DC2A400D36A6D /* SubManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB17480262DC2A400D36A6D /* SubManager.swift */; };
 		EBB17482262DC2A400D36A6D /* SubManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB17480262DC2A400D36A6D /* SubManager.swift */; };
 		EBB892CC2636FE82008ACA37 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = EBB892CB2636FE82008ACA37 /* Makefile */; };
@@ -34,8 +36,8 @@
 		EBC85E71262C62E1003B6808 /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC85E70262C62E1003B6808 /* Subscription.swift */; };
 		EBC85E76262C6636003B6808 /* SubListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC85E75262C6636003B6808 /* SubListView.swift */; };
 		EBC85E77262C6636003B6808 /* SubListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC85E75262C6636003B6808 /* SubListView.swift */; };
-		EBC85E92262D0303003B6808 /* NewSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC85E91262D0303003B6808 /* NewSubView.swift */; };
-		EBC85E93262D0303003B6808 /* NewSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC85E91262D0303003B6808 /* NewSubView.swift */; };
+		EBC85E92262D0303003B6808 /* SubNewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC85E91262D0303003B6808 /* SubNewView.swift */; };
+		EBC85E93262D0303003B6808 /* SubNewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC85E91262D0303003B6808 /* SubNewView.swift */; };
 		EBEBF96F2630F35500E31F42 /* SubRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEBF96E2630F35500E31F42 /* SubRowView.swift */; };
 		EBEBF9702630F35500E31F42 /* SubRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEBF96E2630F35500E31F42 /* SubRowView.swift */; };
 /* End PBXBuildFile section */
@@ -46,6 +48,7 @@
 		EB5CC6E0263428520089B931 /* ProxyNode+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProxyNode+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		EB5CC6E1263428520089B931 /* Subscription+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Subscription+CoreDataClass.swift"; sourceTree = "<group>"; };
 		EB5CC6E2263428520089B931 /* Subscription+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Subscription+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		EB6B4FED2638D346006E5D31 /* SubEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubEditView.swift; sourceTree = "<group>"; };
 		EBB17480262DC2A400D36A6D /* SubManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubManager.swift; sourceTree = "<group>"; };
 		EBB892CB2636FE82008ACA37 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		EBC85E3C262C5D01003B6808 /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
@@ -62,7 +65,7 @@
 		EBC85E66262C5E6D003B6808 /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
 		EBC85E70262C62E1003B6808 /* Subscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
 		EBC85E75262C6636003B6808 /* SubListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubListView.swift; sourceTree = "<group>"; };
-		EBC85E91262D0303003B6808 /* NewSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSubView.swift; sourceTree = "<group>"; };
+		EBC85E91262D0303003B6808 /* SubNewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubNewView.swift; sourceTree = "<group>"; };
 		EBEBF96E2630F35500E31F42 /* SubRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -170,9 +173,10 @@
 		EBC85E74262C661E003B6808 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				EBC85E91262D0303003B6808 /* NewSubView.swift */,
+				EBC85E91262D0303003B6808 /* SubNewView.swift */,
 				EBC85E75262C6636003B6808 /* SubListView.swift */,
 				EBEBF96E2630F35500E31F42 /* SubRowView.swift */,
+				EB6B4FED2638D346006E5D31 /* SubEditView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -277,10 +281,11 @@
 				EBB892CC2636FE82008ACA37 /* Makefile in Sources */,
 				EBB17481262DC2A400D36A6D /* SubManager.swift in Sources */,
 				EBC85E53262C5D01003B6808 /* SpeedXApp.swift in Sources */,
-				EBC85E92262D0303003B6808 /* NewSubView.swift in Sources */,
+				EBC85E92262D0303003B6808 /* SubNewView.swift in Sources */,
 				EB5CC6E3263428520089B931 /* ProxyNode+CoreDataClass.swift in Sources */,
 				EB5CC6C6263424630089B931 /* ProxyNode.swift in Sources */,
 				EBC85E57262C5D01003B6808 /* Persistence.swift in Sources */,
+				EB6B4FEE2638D346006E5D31 /* SubEditView.swift in Sources */,
 				EB5CC6E9263428520089B931 /* Subscription+CoreDataProperties.swift in Sources */,
 				EBC85E51262C5D01003B6808 /* SpeedX.xcdatamodeld in Sources */,
 				EBC85E76262C6636003B6808 /* SubListView.swift in Sources */,
@@ -299,7 +304,7 @@
 				EB5CC6E8263428520089B931 /* Subscription+CoreDataClass.swift in Sources */,
 				EB5CC6E4263428520089B931 /* ProxyNode+CoreDataClass.swift in Sources */,
 				EBEBF9702630F35500E31F42 /* SubRowView.swift in Sources */,
-				EBC85E93262D0303003B6808 /* NewSubView.swift in Sources */,
+				EBC85E93262D0303003B6808 /* SubNewView.swift in Sources */,
 				EBC85E54262C5D01003B6808 /* SpeedXApp.swift in Sources */,
 				EBC85E58262C5D01003B6808 /* Persistence.swift in Sources */,
 				EB5CC6EA263428520089B931 /* Subscription+CoreDataProperties.swift in Sources */,
@@ -310,6 +315,7 @@
 				EB5CC6E6263428520089B931 /* ProxyNode+CoreDataProperties.swift in Sources */,
 				EBB892CD2636FE82008ACA37 /* Makefile in Sources */,
 				EBC85E77262C6636003B6808 /* SubListView.swift in Sources */,
+				EB6B4FEF2638D346006E5D31 /* SubEditView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -104,7 +104,7 @@ struct SubListView: View {
                     ToolbarItem(placement: .navigationBarLeading) { scanQrcode }
                     ToolbarItem(placement: .principal) { title }
                     ToolbarItem(placement: .navigationBarTrailing) { addButton } }
-                    .sheet(isPresented: $showDetail) { NewSubView(isPresented: $showDetail).environment(\.managedObjectContext, self.context)
+                    .sheet(isPresented: $showDetail) { SubNewView(isPresented: $showDetail).environment(\.managedObjectContext, self.context)
                 }
             }
                 .navigationViewStyle(StackNavigationViewStyle())
