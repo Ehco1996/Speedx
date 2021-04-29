@@ -11,13 +11,14 @@ struct SubEditView: View {
     let sub: Subscription
     @State var url: String = ""
     @State var remark: String = ""
-    @State var showAlert: Bool = false
+    @Binding var showAlert: Bool
 
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @Environment(\.managedObjectContext) var context
 
-    init(sub: Subscription) {
+    init(sub: Subscription, showAlert: Binding<Bool>) {
         self.sub = sub
+        self._showAlert = showAlert
         self._url = State(initialValue: sub.url)
         self._remark = State(initialValue: sub.remark!)
     }
@@ -47,7 +48,6 @@ struct SubEditView: View {
                     Spacer()
                 }
             })
-            .alert(isPresented: self.$showAlert) { Alert(title: Text("保存成功"), dismissButton: .none) }
     }
 
     var body: some View {
@@ -86,6 +86,6 @@ struct SubEditView_Previews: PreviewProvider {
         sub.url = "test.com"
         sub.addToNodes(node)
 
-        return SubEditView(sub: sub)
+        return SubEditView(sub: sub, showAlert: Binding.constant(false))
     }
 }

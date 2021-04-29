@@ -19,6 +19,7 @@ struct SubListView: View {
     @State private var editMode: EditMode = .inactive
     @State private var selection: String?
 
+
     @Environment(\.managedObjectContext) var context
     @FetchRequest(fetchRequest: Subscription.listAll()) var subList: FetchedResults<Subscription>
     init() {
@@ -60,7 +61,7 @@ struct SubListView: View {
                 case .active:
                     Text("done").foregroundColor(.gray).bold()
                 default:
-                    Text("...").font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/).foregroundColor(.gray).bold()
+                    Text("...").font(.title).foregroundColor(.gray).bold()
                 }
             }
         }

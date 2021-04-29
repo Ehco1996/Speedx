@@ -13,7 +13,7 @@ struct SubNewView: View {
     @State var url: String = ""
     @State var remark: String = ""
 
-    @State private var alertTitle = "保存成功"
+    @State private var alertTitle = "添加成功"
     @State private var showSaveAlert = false
 
     // 控制是否展示的
