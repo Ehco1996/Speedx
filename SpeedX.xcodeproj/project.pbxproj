@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB25488628F2536700D7C482 /* SelectedFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB25488528F2536700D7C482 /* SelectedFoodView.swift */; };
+		EB25488728F2536700D7C482 /* SelectedFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB25488528F2536700D7C482 /* SelectedFoodView.swift */; };
 		EB5CC6C6263424630089B931 /* ProxyNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5CC6C5263424630089B931 /* ProxyNode.swift */; };
 		EB5CC6C7263424630089B931 /* ProxyNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5CC6C5263424630089B931 /* ProxyNode.swift */; };
 		EB5CC6E3263428520089B931 /* ProxyNode+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5CC6DF263428520089B931 /* ProxyNode+CoreDataClass.swift */; };
@@ -43,6 +45,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EB25488528F2536700D7C482 /* SelectedFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedFoodView.swift; sourceTree = "<group>"; };
 		EB5CC6C5263424630089B931 /* ProxyNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyNode.swift; sourceTree = "<group>"; };
 		EB5CC6DF263428520089B931 /* ProxyNode+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProxyNode+CoreDataClass.swift"; sourceTree = "<group>"; };
 		EB5CC6E0263428520089B931 /* ProxyNode+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProxyNode+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -177,6 +180,7 @@
 				EBC85E75262C6636003B6808 /* SubListView.swift */,
 				EBEBF96E2630F35500E31F42 /* SubRowView.swift */,
 				EB6B4FED2638D346006E5D31 /* SubEditView.swift */,
+				EB25488528F2536700D7C482 /* SelectedFoodView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -280,6 +284,7 @@
 			files = (
 				EBB892CC2636FE82008ACA37 /* Makefile in Sources */,
 				EBB17481262DC2A400D36A6D /* SubManager.swift in Sources */,
+				EB25488628F2536700D7C482 /* SelectedFoodView.swift in Sources */,
 				EBC85E53262C5D01003B6808 /* SpeedXApp.swift in Sources */,
 				EBC85E92262D0303003B6808 /* SubNewView.swift in Sources */,
 				EB5CC6E3263428520089B931 /* ProxyNode+CoreDataClass.swift in Sources */,
@@ -314,6 +319,7 @@
 				EBC85E56262C5D01003B6808 /* ContentView.swift in Sources */,
 				EB5CC6E6263428520089B931 /* ProxyNode+CoreDataProperties.swift in Sources */,
 				EBB892CD2636FE82008ACA37 /* Makefile in Sources */,
+				EB25488728F2536700D7C482 /* SelectedFoodView.swift in Sources */,
 				EBC85E77262C6636003B6808 /* SubListView.swift in Sources */,
 				EB6B4FEF2638D346006E5D31 /* SubEditView.swift in Sources */,
 			);
@@ -439,10 +445,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZKXZY4PDTJ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -462,10 +469,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZKXZY4PDTJ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
